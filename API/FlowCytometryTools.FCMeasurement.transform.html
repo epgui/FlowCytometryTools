@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-45363835-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <title>FlowCytometryTools.FCMeasurement.transform &mdash; FlowCytometryTools 0.4.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.4.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="FlowCytometryTools 0.4.5 documentation" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+  
+  <a href="https://github.com/eyurtsev/flowcytometrytools"
+     class="visible-desktop hidden-xs"><img
+    id="gh-banner"
+    style="position: absolute; top: 50px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
+    alt="Fork me on GitHub"></a>
+  <script>
+    // Adjust banner height.
+    $(function () {
+      var navHeight = $(".navbar .container").css("height");
+      $("#gh-banner").css("top", navHeight);
+    });
+  </script>
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          FlowCytometryTools</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.4.5</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../tutorial.html">Tutorial</a></li>
+                <li><a href="../api.html">API</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="simple">
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">FlowCytometryTools.FCMeasurement.transform</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="flowcytometrytools-fcmeasurement-transform">
+<h1>FlowCytometryTools.FCMeasurement.transform<a class="headerlink" href="#flowcytometrytools-fcmeasurement-transform" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="FlowCytometryTools.FCMeasurement.transform">
+<tt class="descclassname">FCMeasurement.</tt><tt class="descname">transform</tt><big>(</big><em>transform</em>, <em>direction='forward'</em>, <em>channels=None</em>, <em>return_all=True</em>, <em>auto_range=True</em>, <em>use_spln=True</em>, <em>get_transformer=False</em>, <em>ID=None</em>, <em>apply_now=True</em>, <em>args=()</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="//github.com/eyurtsev/FlowCytometryTools/blob/645134a2aa145aa47e340571b9ac0f30e97f218a/FlowCytometryTools/core/containers.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#FlowCytometryTools.FCMeasurement.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies a transformation to the specified channels.</p>
+<p>The transformation parameters are shared between all transformed channels.
+If different parameters need to be applied to different channels,
+use several calls to <cite>transform</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>transform</strong> (<em>[&#8216;hlog&#8217; | &#8216;tlog&#8217; | &#8216;glog&#8217; | callable]</em>) &#8211; <p>Specifies the transformation to apply to the data.</p>
+<ul>
+<li>callable : a callable that does a transformation (should accept a number or array), or one of the supported named transformations.</li>
+</ul>
+</li>
+<li><strong>direction</strong> (<em>[&#8216;forward&#8217; | &#8216;inverse&#8217;]</em>) &#8211; Direction of transformation.</li>
+<li><strong>channels</strong> (<em>str | list of str | None</em>) &#8211; <p>Names of channels to transform.
+If None is given, all channels will be transformed.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Remember that transforming all channels does not always make sense. For example,
+when working with the time channel, one should probably keep the data as is.</p>
+</div>
+</li>
+<li><strong>return_all</strong> (<em>bool</em>) &#8211; True -  return all columns, with specified ones transformed.
+False - return only specified columns.</li>
+<li><strong>auto_range</strong> (<em>bool</em>) &#8211; <p>If True data range (machine range) is automatically extracted from $PnR field of metadata.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If the data has been previously transformed its range may not match the $PnR value.
+In this case, auto_range should be set to False.</p>
+</div>
+</li>
+<li><strong>use_spln</strong> (<em>bool</em>) &#8211; If True th transform is done using a spline.
+See Transformation.transform for more details.</li>
+<li><strong>get_transformer</strong> (<em>bool</em>) &#8211; If True the transformer is returned in addition to the new Measurement.</li>
+<li><strong>args</strong> &#8211; Additional positional arguments to be passed to the Transformation.</li>
+<li><strong>kwargs</strong> &#8211; Additional keyword arguments to be passed to the Transformation.</li>
+<li><strong>ID</strong> (<em>hashable | None</em>) &#8211; ID for the resulting collection. If None is passed, the original ID is used.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><strong>new</strong> (<em>FCMeasurement</em>) &#8211; New measurement containing the transformed data.</li>
+<li><strong>transformer</strong> (<em>Transformation</em>) &#8211; The Transformation applied to the input measurement.
+Only returned if get_transformer=True.</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-examples admonition">
+<p class="first admonition-title">Examples</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">trans</span> <span class="o">=</span> <span class="n">original</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s">&#39;hlog&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">trans</span> <span class="o">=</span> <span class="n">original</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s">&#39;tlog&#39;</span><span class="p">,</span> <span class="n">th</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">trans</span> <span class="o">=</span> <span class="n">original</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s">&#39;hlog&#39;</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="n">log10</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">18</span><span class="p">),</span> <span class="n">auto_range</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">trans</span> <span class="o">=</span> <span class="n">original</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s">&#39;hlog&#39;</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">use_spln</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">get_transformer</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">trans</span> <span class="o">=</span> <span class="n">original</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s">&#39;hlog&#39;</span><span class="p">,</span> <span class="n">channels</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;FSC-A&#39;</span><span class="p">,</span> <span class="s">&#39;SSC-A&#39;</span><span class="p">],</span> <span class="n">b</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="s">&#39;hlog&#39;</span><span class="p">,</span> <span class="n">channels</span><span class="o">=</span><span class="s">&#39;B1-A&#39;</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2013-2015, Jonathan Friedman &amp; Eugene Yurtsev.<br/>
+      Last updated on Oct 31, 2015.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

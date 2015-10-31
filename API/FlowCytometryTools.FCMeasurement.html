@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-45363835-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <title>FlowCytometryTools.FCMeasurement &mdash; FlowCytometryTools 0.4.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.4.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="FlowCytometryTools 0.4.5 documentation" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+  
+  <a href="https://github.com/eyurtsev/flowcytometrytools"
+     class="visible-desktop hidden-xs"><img
+    id="gh-banner"
+    style="position: absolute; top: 50px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
+    alt="Fork me on GitHub"></a>
+  <script>
+    // Adjust banner height.
+    $(function () {
+      var navHeight = $(".navbar .container").css("height");
+      $("#gh-banner").css("top", navHeight);
+    });
+  </script>
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          FlowCytometryTools</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.4.5</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../tutorial.html">Tutorial</a></li>
+                <li><a href="../api.html">API</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="simple">
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">FlowCytometryTools.FCMeasurement</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="flowcytometrytools-fcmeasurement">
+<h1>FlowCytometryTools.FCMeasurement<a class="headerlink" href="#flowcytometrytools-fcmeasurement" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="FlowCytometryTools.FCMeasurement">
+<em class="property">class </em><tt class="descclassname">FlowCytometryTools.</tt><tt class="descname">FCMeasurement</tt><big>(</big><em>ID</em>, <em>datafile=None</em>, <em>readdata=False</em>, <em>readdata_kwargs={}</em>, <em>metafile=None</em>, <em>readmeta=True</em>, <em>readmeta_kwargs={}</em><big>)</big><a class="reference external" href="//github.com/eyurtsev/FlowCytometryTools/blob/645134a2aa145aa47e340571b9ac0f30e97f218a/FlowCytometryTools/core/containers.py#L30"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#FlowCytometryTools.FCMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class for holding flow cytometry data from
+a single well or a single tube.</p>
+<dl class="method">
+<dt id="FlowCytometryTools.FCMeasurement.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>ID</em>, <em>datafile=None</em>, <em>readdata=False</em>, <em>readdata_kwargs={}</em>, <em>metafile=None</em>, <em>readmeta=True</em>, <em>readmeta_kwargs={}</em><big>)</big><a class="reference external" href="//github.com/eyurtsev/FlowCytometryTools/blob/645134a2aa145aa47e340571b9ac0f30e97f218a/FlowCytometryTools/core/bases.py#L166"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#FlowCytometryTools.FCMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">ID_from_data</span></tt>([ID_field])</td>
+<td>Returns the well ID from the src keyword in the FCS file.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#FlowCytometryTools.FCMeasurement.__init__" title="FlowCytometryTools.FCMeasurement.__init__"><tt class="xref py py-obj docutils literal"><span class="pre">__init__</span></tt></a>(ID[,&nbsp;datafile,&nbsp;readdata,&nbsp;...])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.apply.html#FlowCytometryTools.FCMeasurement.apply" title="FlowCytometryTools.FCMeasurement.apply"><tt class="xref py py-obj docutils literal"><span class="pre">apply</span></tt></a>(func[,&nbsp;applyto,&nbsp;noneval,&nbsp;setdata])</td>
+<td>Apply func either to self or to associated data.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">apply_queued</span></tt>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">copy</span></tt>([deep])</td>
+<td>Make a copy of this object</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.gate.html#FlowCytometryTools.FCMeasurement.gate" title="FlowCytometryTools.FCMeasurement.gate"><tt class="xref py py-obj docutils literal"><span class="pre">gate</span></tt></a>(gate[,&nbsp;apply_now])</td>
+<td>Apply given gate and return new gated sample (with assigned data).</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.get_data.html#FlowCytometryTools.FCMeasurement.get_data" title="FlowCytometryTools.FCMeasurement.get_data"><tt class="xref py py-obj docutils literal"><span class="pre">get_data</span></tt></a>(**kwargs)</td>
+<td>Get the measurement data.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">get_meta</span></tt>(**kwargs)</td>
+<td>Get the measurement metadata.</td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">get_meta_fields</span></tt>(fields[,&nbsp;kwargs])</td>
+<td>Return a dictionary of metadata fields</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">load</span></tt>(path)</td>
+<td>Loads object from a pickled file.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.plot.html#FlowCytometryTools.FCMeasurement.plot" title="FlowCytometryTools.FCMeasurement.plot"><tt class="xref py py-obj docutils literal"><span class="pre">plot</span></tt></a>(channel_names[,&nbsp;kind,&nbsp;gates,&nbsp;...])</td>
+<td>Plots the flow cytometry data associated with the sample on the current axis.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">read_data</span></tt>(**kwargs)</td>
+<td>Read the datafile specified in Sample.datafile and return the resulting object.</td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">read_meta</span></tt>(**kwargs)</td>
+<td>Read only the annotation of the FCS file (without reading DATA segment).</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">save</span></tt>(path)</td>
+<td>Saves object to a pickled file.</td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">set_data</span></tt>([data])</td>
+<td>Read data into memory, applying all actions in queue.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">set_meta</span></tt>([meta])</td>
+<td>Assign values to self.meta.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.subsample.html#FlowCytometryTools.FCMeasurement.subsample" title="FlowCytometryTools.FCMeasurement.subsample"><tt class="xref py py-obj docutils literal"><span class="pre">subsample</span></tt></a>(key[,&nbsp;order,&nbsp;auto_resize])</td>
+<td>Allows arbitrary slicing (subsampling) of the data.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.transform.html#FlowCytometryTools.FCMeasurement.transform" title="FlowCytometryTools.FCMeasurement.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(transform[,&nbsp;direction,&nbsp;channels,&nbsp;...])</td>
+<td>Applies a transformation to the specified channels.</td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">view</span></tt>([channel_names,&nbsp;gates,&nbsp;diag_kw,&nbsp;...])</td>
+<td>Generates a matrix of subplots allowing for a quick way to examine how the sample looks in different channels.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.view_interactively.html#FlowCytometryTools.FCMeasurement.view_interactively" title="FlowCytometryTools.FCMeasurement.view_interactively"><tt class="xref py py-obj docutils literal"><span class="pre">view_interactively</span></tt></a>([backend])</td>
+<td>Loads the current sample in a graphical interface for drawing gates.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.channel_names.html#FlowCytometryTools.FCMeasurement.channel_names" title="FlowCytometryTools.FCMeasurement.channel_names"><tt class="xref py py-obj docutils literal"><span class="pre">channel_names</span></tt></a></td>
+<td>A tuple containing the channel names.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.channels.html#FlowCytometryTools.FCMeasurement.channels" title="FlowCytometryTools.FCMeasurement.channels"><tt class="xref py py-obj docutils literal"><span class="pre">channels</span></tt></a></td>
+<td>A DataFrame containing complete channel information</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="FlowCytometryTools.FCMeasurement.counts.html#FlowCytometryTools.FCMeasurement.counts" title="FlowCytometryTools.FCMeasurement.counts"><tt class="xref py py-obj docutils literal"><span class="pre">counts</span></tt></a></td>
+<td>Returns total number of events.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">data</span></tt></td>
+<td>Data may be stored in memory or on disk</td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">meta</span></tt></td>
+<td>Metadata associated with measurement.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">shape</span></tt></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2013-2015, Jonathan Friedman &amp; Eugene Yurtsev.<br/>
+      Last updated on Oct 31, 2015.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

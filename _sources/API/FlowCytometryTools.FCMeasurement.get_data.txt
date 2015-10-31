@@ -1,0 +1,6 @@
+FlowCytometryTools.FCMeasurement.get_data
+=========================================
+
+.. currentmodule:: FlowCytometryTools
+
+.. automethod:: FCMeasurement.get_data

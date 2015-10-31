@@ -1,0 +1,6 @@
+FlowCytometryTools.FCMeasurement.view_interactively
+===================================================
+
+.. currentmodule:: FlowCytometryTools
+
+.. automethod:: FCMeasurement.view_interactively

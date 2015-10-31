@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-45363835-3']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <title>FlowCytometryTools.FCMeasurement.gate &mdash; FlowCytometryTools 0.4.5 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootswatch-3.3.4/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.4.5',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="FlowCytometryTools 0.4.5 documentation" href="../index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+  
+  <a href="https://github.com/eyurtsev/flowcytometrytools"
+     class="visible-desktop hidden-xs"><img
+    id="gh-banner"
+    style="position: absolute; top: 50px; right: 0; border: 0;"
+    src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
+    alt="Fork me on GitHub"></a>
+  <script>
+    // Adjust banner height.
+    $(function () {
+      var navHeight = $(".navbar .container").css("height");
+      $("#gh-banner").css("top", navHeight);
+    });
+  </script>
+
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          FlowCytometryTools</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.4.5</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../gallery.html">Gallery</a></li>
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../tutorial.html">Tutorial</a></li>
+                <li><a href="../api.html">API</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="simple">
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">FlowCytometryTools.FCMeasurement.gate</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="flowcytometrytools-fcmeasurement-gate">
+<h1>FlowCytometryTools.FCMeasurement.gate<a class="headerlink" href="#flowcytometrytools-fcmeasurement-gate" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="FlowCytometryTools.FCMeasurement.gate">
+<tt class="descclassname">FCMeasurement.</tt><tt class="descname">gate</tt><big>(</big><em>gate</em>, <em>apply_now=True</em><big>)</big><a class="reference external" href="//github.com/eyurtsev/FlowCytometryTools/blob/645134a2aa145aa47e340571b9ac0f30e97f218a/FlowCytometryTools/core/containers.py"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#FlowCytometryTools.FCMeasurement.gate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply given gate and return new gated sample (with assigned data).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>gate</strong> ([<a class="reference internal" href="FlowCytometryTools.ThresholdGate.html#FlowCytometryTools.ThresholdGate" title="FlowCytometryTools.ThresholdGate"><tt class="xref py py-class docutils literal"><span class="pre">ThresholdGate</span></tt></a> | <a class="reference internal" href="FlowCytometryTools.IntervalGate.html#FlowCytometryTools.IntervalGate" title="FlowCytometryTools.IntervalGate"><tt class="xref py py-class docutils literal"><span class="pre">IntervalGate</span></tt></a> | <a class="reference internal" href="FlowCytometryTools.QuadGate.html#FlowCytometryTools.QuadGate" title="FlowCytometryTools.QuadGate"><tt class="xref py py-class docutils literal"><span class="pre">QuadGate</span></tt></a> | <a class="reference internal" href="FlowCytometryTools.PolyGate.html#FlowCytometryTools.PolyGate" title="FlowCytometryTools.PolyGate"><tt class="xref py py-class docutils literal"><span class="pre">PolyGate</span></tt></a> | <a class="reference internal" href="FlowCytometryTools.core.gates.CompositeGate.html#FlowCytometryTools.core.gates.CompositeGate" title="FlowCytometryTools.core.gates.CompositeGate"><tt class="xref py py-class docutils literal"><span class="pre">CompositeGate</span></tt></a>]) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Sample with data that passes gates</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">FCMeasurement</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2013-2015, Jonathan Friedman &amp; Eugene Yurtsev.<br/>
+      Last updated on Oct 31, 2015.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
